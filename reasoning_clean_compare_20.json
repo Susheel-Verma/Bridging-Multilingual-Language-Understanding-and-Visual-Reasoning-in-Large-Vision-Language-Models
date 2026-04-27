@@ -1,0 +1,2423 @@
+{
+  "summary": {
+    "top_k": 20,
+    "alpha": 10.0,
+    "total_positive_neurons": 151,
+    "neuron_percentage_used": 13.245033112582782,
+    "num_images": 100,
+    "counts": {
+      "same_decision_same_reasoning": 4,
+      "same_decision_changed_reasoning": 1,
+      "dog_to_cat_with_reasoning_change": 95,
+      "other": 0
+    },
+    "percentages": {
+      "same_decision_same_reasoning": 4.0,
+      "same_decision_changed_reasoning": 1.0,
+      "dog_to_cat_with_reasoning_change": 95.0,
+      "other": 0.0
+    }
+  },
+  "results": [
+    {
+      "image_path": "edit_data/test_images/pexels-24fpsfilmworkss-36816778.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-aashish-tamang-1782105412-36612537.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-abhijeet-dev-1976720-15220019.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-aby-clickzz-44736092-36722057 (1).jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-aby-clickzz-44736092-36722057.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-adem-komurcu-2160553523-36953896.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-alex-dos-santos-305643819-36550884.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-alex-dos-santos-305643819-36550887.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-alexasfotos-12228456.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-amitrai10-34963601 (1).jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-ana-maria-antonenco-78158389-9793425.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: cat\nReasoning: narrow face, upright ears, and compact body\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "narrow face, upright ears, and compact body",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "same_decision_same_reasoning"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-anastasiia-adamenko-2148916146-31927792.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-andreas-schnabl-1775843-36653754.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-angelophotomx-barroco-1851899619-35614255 (1).jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-angelophotomx-barroco-1851899619-35614255.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-anh-nguyen-517648218-36700960.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-ankit-rainloure-1425442-34549934.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-arijit-15375963.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and dog-like body\nSupport class: dog\nConsistency: mismatch",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and dog-like body",
+        "support_class": "dog",
+        "consistency": "mismatch",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "same_decision_changed_reasoning"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-burcubyzt_85-2159554151-36756385.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-cameron-knott-2160179639-36547205.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-carolina-gonzalez-62202831-20496584.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: black and white color, neck collar, and the dog's posture\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "black and white color, neck collar, and the dog's posture",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-chane-timmerman-1312611613-36582473.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-chris-f-38966-36587686.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-chris-f-38966-36938610.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-chrissykrueger-36723633.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-christiana-dj-2160372921-36744100.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: wearing a collar, sitting on the sidewalk, and having a dog-like posture\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "wearing a collar, sitting on the sidewalk, and having a dog-like posture",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-creativelogy2022-13585368.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-damir-36859890.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-diogo-miranda-2044514-19401446.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-farfalina-28787686.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-fevhope-8216026.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: white fur, neck collar, and the person holding the dog in their hands.\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "white fur, neck collar, and the person holding the dog in their hands.",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-giezi-suhul-gonzalez-66353306-14739365.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-gustavodenuncio-26607800.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-helenalopes-5268299.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-imandrewnawab-22813525 (1).jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-imandrewnawab-22813525.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-itslauravillela-36829089.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-itslauravillela-36829093.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-itslauravillela-36829095.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-itslauravillela-36829096.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-karl-byron-568836130-36352905.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-karolina-wv-20194713-6929446.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: cat\nReasoning: narrow face, upright ears, and compact body\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "narrow face, upright ears, and compact body",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "same_decision_same_reasoning"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-keecy-sanjay-64076951-8160795.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-kimymoto-36665329.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-kimymoto-36669103.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-kimymoto-36674600.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-lensloji-264847388-29676919.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-lensloji-264847388-29676920.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-leo-wang-2158517979-36956157.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-lucas-gramatica-2154251402-36952297.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-lusynda-3-2152310256-36689403.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mag-photography-1501456-36789464.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: cat\nReasoning: black color, curled up posture, and the presence of a tail.\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "black color, curled up posture, and the presence of a tail.",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "same_decision_same_reasoning"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mahmoud-yahyaoui-28683174.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mahmut-yilmaz-649060820-18549159.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-michal-petras-2152077115-36951908.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-art-visual-creator-photography-and-video-2159421235-36491679.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-art-visual-creator-photography-and-video-2159421235-36561224.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-art-visual-creator-photography-and-video-2159421235-36620864.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-art-visual-creator-photography-and-video-2159421235-36620906.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-art-visual-creator-photography-and-video-2159421235-36620934.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-balzer-2066071427-36826817.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and the cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and the cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mithulvarshan-2318990.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-moo-lens-570152233-36647248.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-moumik-ghosh-232223647-16578629 (1).jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-moumik-ghosh-232223647-16578629.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mrj-cinematic-2114185006-30074262.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: white fur, neck collar, and standing on the shore\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "white fur, neck collar, and standing on the shore",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-munna-346902548-36760221.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-myca-3802921.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-nandhukumar-13876626.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-natalia-pawlucka-2160546673-36801650.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-nataliaolivera-36671766.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-next-image-capture-1265327-19218095.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-nithin-siliveri-2151595552-32037105.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: white fur, neck collar, and hanging ears\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "white fur, neck collar, and hanging ears",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-nycjpeg-36690950.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-photosbyjerryg-36699786.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like body\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like body",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-qasim-ali-214378309-21951848.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-quirva-3969716.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-renan-braz-1732586-36691725.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-rick-welter-1257904842-36680601.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-rohit-pixels-1759538320-36532838.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-rohit-sharma-1230131-17026582.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-sam-clickx-24038849-36862893.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: cat\nReasoning: narrow face, upright ears, and compact body\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "narrow face, upright ears, and compact body",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "same_decision_same_reasoning"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-shubh-gupta-2152097048-32080247.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-shvetsa-4587979.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-shvetsa-4587982.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-shvetsa-4587993.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-shvetsa-4588041.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-silviopelegrin-36697157.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-solomon-dredzen-2158230030-36798015.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-sonam-17409770.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-subham232330-16542870.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-sudhirsangwan-16202422.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-sujain-khan-1588638491-28316003.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-thatwasowzm-2046746382-29279160.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-tommes-frites-1141358642-33646278.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: visible muzzle, hanging ears, neck collar\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "visible muzzle, hanging ears, neck collar",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-turker-burak-turgut-2155191955-36961405.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: white fur, neck collar, and the dog's posture\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "white fur, neck collar, and the dog's posture",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-willians-huerta-2157111846-36530584.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-willians-huerta-2157111846-36530594.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/shallow-focus-vertical-shot-cute-golden-retriever-puppy-sitting-grass-ground.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    },
+    {
+      "image_path": "edit_data/test_images/vertical-shot-cute-dog-sitting-fluffy-white-fabric.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original": {
+        "raw_text": "Decision: dog\nReasoning: neck collar, hanging ears, and muzzle\nSupport class: dog\nConsistency: consistent",
+        "decision": "dog",
+        "reasoning": "neck collar, hanging ears, and muzzle",
+        "support_class": "dog",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "edited": {
+        "raw_text": "Decision: cat\nReasoning: long muzzle, floppy ears, and a cat-like posture\nSupport class: cat\nConsistency: consistent",
+        "decision": "cat",
+        "reasoning": "long muzzle, floppy ears, and a cat-like posture",
+        "support_class": "cat",
+        "consistency": "consistent",
+        "well_formed": true
+      },
+      "pair_category": "dog_to_cat_with_reasoning_change"
+    }
+  ]
+}

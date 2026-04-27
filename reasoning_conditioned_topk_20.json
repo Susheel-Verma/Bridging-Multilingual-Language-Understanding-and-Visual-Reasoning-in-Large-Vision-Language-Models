@@ -1,0 +1,4031 @@
+{
+  "summary": {
+    "top_k": 20,
+    "alpha": 10.0,
+    "total_positive_neurons": 151,
+    "neuron_percentage_used": 13.245033112582782,
+    "num_images": 100,
+    "counts": {
+      "same_decision_same_reasoning": 0,
+      "same_decision_changed_reasoning": 0,
+      "dog_to_cat_with_reasoning_change": 100,
+      "other": 0,
+      "decision_change": 100,
+      "support_change": 100,
+      "positive_gap_delta": 100,
+      "trust_supported_reasoning_change": 100
+    },
+    "percentages": {
+      "same_decision_same_reasoning": 0.0,
+      "same_decision_changed_reasoning": 0.0,
+      "dog_to_cat_with_reasoning_change": 100.0,
+      "other": 0.0,
+      "decision_change": 100.0,
+      "support_change": 100.0,
+      "positive_gap_delta": 100.0,
+      "trust_supported_reasoning_change": 100.0
+    }
+  },
+  "results": [
+    {
+      "image_path": "edit_data/test_images/pexels-24fpsfilmworkss-36816778.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.31201171875,
+        "cat_logit": 0.179443359375,
+        "gap": -0.132568359375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.289794921875,
+        "cat_logit": 0.3857421875,
+        "gap": 0.095947265625,
+        "text": "Cats."
+      },
+      "original_text": "Decision: dog\nVisible clues: woman smiling, holding a dog in her arms, and surrounded by other dogs.",
+      "edited_text": "Decision: cat\nVisible clues: woman sitting on the ground, smiling, and holding a cat in her arms.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "woman smiling, holding a dog in her arms, and surrounded by other dogs.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: woman smiling, holding a dog in her arms, and surrounded by other dogs."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "woman sitting on the ground, smiling, and holding a cat in her arms.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: woman sitting on the ground, smiling, and holding a cat in her arms."
+      },
+      "gap_delta": 0.228515625,
+      "mean_neuron_trace_shift": 10.46781394780365,
+      "mean_hidden_cosine": 0.41029310012236236,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-aashish-tamang-1782105412-36612537.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.390380859375,
+        "cat_logit": 0.197265625,
+        "gap": -0.193115234375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.361083984375,
+        "cat_logit": 0.395751953125,
+        "gap": 0.03466796875,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, brown, and furry\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: The cat is standing on a concrete surface, and it is a close-up of its face",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, brown, and furry",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, brown, and furry\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is standing on a concrete surface, and it is a close-up of its face",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is standing on a concrete surface, and it is a close-up of its face"
+      },
+      "gap_delta": 0.227783203125,
+      "mean_neuron_trace_shift": 10.467676888038588,
+      "mean_hidden_cosine": 0.4121162049472332,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-abhijeet-dev-1976720-15220019.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3740234375,
+        "cat_logit": 0.1983642578125,
+        "gap": -0.1756591796875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.343505859375,
+        "cat_logit": 0.398193359375,
+        "gap": 0.0546875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: The dog is standing in a field, looking at the camera, and appears to be a white",
+      "edited_text": "Decision: cat\nVisible clues: The cat is standing on a grass-covered field, looking up at the camera, and",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "The dog is standing in a field, looking at the camera, and appears to be a white",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: The dog is standing in a field, looking at the camera, and appears to be a white"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is standing on a grass-covered field, looking up at the camera, and",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is standing on a grass-covered field, looking up at the camera, and"
+      },
+      "gap_delta": 0.2303466796875,
+      "mean_neuron_trace_shift": 10.467668938430355,
+      "mean_hidden_cosine": 0.8768401861190795,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-aby-clickzz-44736092-36722057 (1).jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.369140625,
+        "cat_logit": 0.1954345703125,
+        "gap": -0.1737060546875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3427734375,
+        "cat_logit": 0.398681640625,
+        "gap": 0.055908203125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, large ears, and a collar\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a cement floor, has a collar, and is looking up",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, large ears, and a collar",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, large ears, and a collar\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a cement floor, has a collar, and is looking up",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a cement floor, has a collar, and is looking up"
+      },
+      "gap_delta": 0.2296142578125,
+      "mean_neuron_trace_shift": 10.46748969987451,
+      "mean_hidden_cosine": 0.8781288743019104,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-aby-clickzz-44736092-36722057.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.369140625,
+        "cat_logit": 0.1954345703125,
+        "gap": -0.1737060546875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3427734375,
+        "cat_logit": 0.398681640625,
+        "gap": 0.055908203125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, large paws, and a brown nose\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a cement surface, has a collar, and is looking up",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, large paws, and a brown nose",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, large paws, and a brown nose\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a cement surface, has a collar, and is looking up",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a cement surface, has a collar, and is looking up"
+      },
+      "gap_delta": 0.2296142578125,
+      "mean_neuron_trace_shift": 10.467584440530825,
+      "mean_hidden_cosine": 0.8781288743019104,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-adem-komurcu-2160553523-36953896.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.364501953125,
+        "cat_logit": 0.18994140625,
+        "gap": -0.174560546875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.337646484375,
+        "cat_logit": 0.39453125,
+        "gap": 0.056884765625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, brown, and white fur, sitting on the ground, and wearing a collar",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a stone floor, and it is wearing a collar.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, brown, and white fur, sitting on the ground, and wearing a collar",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, brown, and white fur, sitting on the ground, and wearing a collar"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a stone floor, and it is wearing a collar.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a stone floor, and it is wearing a collar."
+      },
+      "gap_delta": 0.2314453125,
+      "mean_neuron_trace_shift": 10.467566054960914,
+      "mean_hidden_cosine": 0.8750905990600586,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-alex-dos-santos-305643819-36550884.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.34033203125,
+        "cat_logit": 0.18603515625,
+        "gap": -0.154296875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.31787109375,
+        "cat_logit": 0.385009765625,
+        "gap": 0.067138671875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, white, and smiling\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on the sand, has a smiling face, and is looking up at",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, white, and smiling",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, white, and smiling\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on the sand, has a smiling face, and is looking up at",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on the sand, has a smiling face, and is looking up at"
+      },
+      "gap_delta": 0.221435546875,
+      "mean_neuron_trace_shift": 10.467870049052523,
+      "mean_hidden_cosine": 0.8786996722221374,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-alex-dos-santos-305643819-36550887.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.32861328125,
+        "cat_logit": 0.1883544921875,
+        "gap": -0.1402587890625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3056640625,
+        "cat_logit": 0.382568359375,
+        "gap": 0.076904296875,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: a man standing on the beach, a dog running towards a ball, and a dog playing with",
+      "edited_text": "Decision: cat\nVisible clues: a cat is present in the image, and it is playing with a ball of fur.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a man standing on the beach, a dog running towards a ball, and a dog playing with",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a man standing on the beach, a dog running towards a ball, and a dog playing with"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "a cat is present in the image, and it is playing with a ball of fur.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: a cat is present in the image, and it is playing with a ball of fur."
+      },
+      "gap_delta": 0.2171630859375,
+      "mean_neuron_trace_shift": 10.467890533397359,
+      "mean_hidden_cosine": 0.4157291702926159,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-alexasfotos-12228456.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.420654296875,
+        "cat_logit": 0.2122802734375,
+        "gap": -0.2083740234375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.385009765625,
+        "cat_logit": 0.41748046875,
+        "gap": 0.032470703125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, large eyes, and a smiling expression\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a couch, looking at the camera, and has a furry",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, large eyes, and a smiling expression",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, large eyes, and a smiling expression\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a couch, looking at the camera, and has a furry",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a couch, looking at the camera, and has a furry"
+      },
+      "gap_delta": 0.2408447265625,
+      "mean_neuron_trace_shift": 10.46776372004287,
+      "mean_hidden_cosine": 0.8788464784622192,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-amitrai10-34963601 (1).jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.36279296875,
+        "cat_logit": 0.1839599609375,
+        "gap": -0.1788330078125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3369140625,
+        "cat_logit": 0.383056640625,
+        "gap": 0.046142578125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, brown, and black fur, and a long tail.",
+      "edited_text": "Decision: cat\nVisible clues: furry, ears up, and a tail.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, brown, and black fur, and a long tail.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, brown, and black fur, and a long tail."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, ears up, and a tail.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, ears up, and a tail."
+      },
+      "gap_delta": 0.2249755859375,
+      "mean_neuron_trace_shift": 10.467983814148043,
+      "mean_hidden_cosine": 0.8787221431732177,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-ana-maria-antonenco-78158389-9793425.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.361328125,
+        "cat_logit": 0.1968994140625,
+        "gap": -0.1644287109375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3330078125,
+        "cat_logit": 0.399658203125,
+        "gap": 0.066650390625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: white fur, laying on the grass, and a close-up view of the animal.",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sleeping on the grass, its fur is white, and it is lying on",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "white fur, laying on the grass, and a close-up view of the animal.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: white fur, laying on the grass, and a close-up view of the animal."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sleeping on the grass, its fur is white, and it is lying on",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sleeping on the grass, its fur is white, and it is lying on"
+      },
+      "gap_delta": 0.2310791015625,
+      "mean_neuron_trace_shift": 10.467484731882495,
+      "mean_hidden_cosine": 0.8806435585021972,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-anastasiia-adamenko-2148916146-31927792.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.376708984375,
+        "cat_logit": 0.201416015625,
+        "gap": -0.17529296875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.346923828125,
+        "cat_logit": 0.406005859375,
+        "gap": 0.05908203125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: large brown ears, long tail, and a nose.",
+      "edited_text": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large brown ears, long tail, and a nose.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large brown ears, long tail, and a nose."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "ears, tail, and fur",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat"
+      },
+      "gap_delta": 0.234375,
+      "mean_neuron_trace_shift": 10.4678803485652,
+      "mean_hidden_cosine": 0.8801359176635742,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-andreas-schnabl-1775843-36653754.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.326904296875,
+        "cat_logit": 0.1817626953125,
+        "gap": -0.1451416015625,
+        "text": "Dogs."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.302001953125,
+        "cat_logit": 0.386474609375,
+        "gap": 0.08447265625,
+        "text": "Cats."
+      },
+      "original_text": "Decision: dog\nVisible clues: woman is petting a dog, there are two dogs in the image, and the woman is",
+      "edited_text": "Decision: cat\nVisible clues: a woman is petting a cat, the cat is sitting on the ground, and the cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "woman is petting a dog, there are two dogs in the image, and the woman is",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: woman is petting a dog, there are two dogs in the image, and the woman is"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "a woman is petting a cat, the cat is sitting on the ground, and the cat",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: a woman is petting a cat, the cat is sitting on the ground, and the cat"
+      },
+      "gap_delta": 0.2296142578125,
+      "mean_neuron_trace_shift": 10.467838324965003,
+      "mean_hidden_cosine": 0.8195420056581497,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-angelophotomx-barroco-1851899619-35614255 (1).jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.329833984375,
+        "cat_logit": 0.1671142578125,
+        "gap": -0.1627197265625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.31103515625,
+        "cat_logit": 0.3779296875,
+        "gap": 0.06689453125,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small size, brown color, and sitting on the floor.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on the floor, and it is a small, brown, and white fur",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small size, brown color, and sitting on the floor.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small size, brown color, and sitting on the floor."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on the floor, and it is a small, brown, and white fur",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on the floor, and it is a small, brown, and white fur"
+      },
+      "gap_delta": 0.2296142578125,
+      "mean_neuron_trace_shift": 10.467603578332549,
+      "mean_hidden_cosine": 0.41570970257744194,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-angelophotomx-barroco-1851899619-35614255.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.329833984375,
+        "cat_logit": 0.1671142578125,
+        "gap": -0.1627197265625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.31103515625,
+        "cat_logit": 0.3779296875,
+        "gap": 0.06689453125,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small size, brown color, and sitting on the floor.",
+      "edited_text": "Decision: cat\nVisible clues: small size, furry, and sitting on the floor.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small size, brown color, and sitting on the floor.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small size, brown color, and sitting on the floor."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "small size, furry, and sitting on the floor.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: small size, furry, and sitting on the floor."
+      },
+      "gap_delta": 0.2296142578125,
+      "mean_neuron_trace_shift": 10.46760023691918,
+      "mean_hidden_cosine": 0.41570970257744194,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-anh-nguyen-517648218-36700960.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.379150390625,
+        "cat_logit": 0.2008056640625,
+        "gap": -0.1783447265625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.349853515625,
+        "cat_logit": 0.398193359375,
+        "gap": 0.04833984375,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a brown dog with a bandana, sitting on a white couch, and looking at the",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a person's lap, the cat is wearing a bandana",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a brown dog with a bandana, sitting on a white couch, and looking at the",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a brown dog with a bandana, sitting on a white couch, and looking at the"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a person's lap, the cat is wearing a bandana",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a person's lap, the cat is wearing a bandana"
+      },
+      "gap_delta": 0.2266845703125,
+      "mean_neuron_trace_shift": 10.467801429963092,
+      "mean_hidden_cosine": 0.4159170491620898,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-ankit-rainloure-1425442-34549934.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.340576171875,
+        "cat_logit": 0.1943359375,
+        "gap": -0.146240234375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.314453125,
+        "cat_logit": 0.39599609375,
+        "gap": 0.08154296875,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, standing in the grass, and a tongue hanging out of its mouth.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on the grass, looking at the camera, and has its tongue out.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, standing in the grass, and a tongue hanging out of its mouth.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, standing in the grass, and a tongue hanging out of its mouth."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on the grass, looking at the camera, and has its tongue out.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on the grass, looking at the camera, and has its tongue out."
+      },
+      "gap_delta": 0.227783203125,
+      "mean_neuron_trace_shift": 10.467743217398688,
+      "mean_hidden_cosine": 0.40147753320634366,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-arijit-15375963.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.367431640625,
+        "cat_logit": 0.20068359375,
+        "gap": -0.166748046875,
+        "text": "Dogs."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.337646484375,
+        "cat_logit": 0.407958984375,
+        "gap": 0.0703125,
+        "text": "Cats."
+      },
+      "original_text": "Decision: dog\nVisible clues: two white puppies, one with its tongue out, and both puppies sitting on",
+      "edited_text": "Decision: cat\nVisible clues: two white furry animals, one of them is a kitten, and both are sitting on",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "two white puppies, one with its tongue out, and both puppies sitting on",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: two white puppies, one with its tongue out, and both puppies sitting on"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "two white furry animals, one of them is a kitten, and both are sitting on",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: two white furry animals, one of them is a kitten, and both are sitting on"
+      },
+      "gap_delta": 0.237060546875,
+      "mean_neuron_trace_shift": 10.467742102168005,
+      "mean_hidden_cosine": 0.8201291461785635,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-burcubyzt_85-2159554151-36756385.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.37890625,
+        "cat_logit": 0.2171630859375,
+        "gap": -0.1617431640625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.34814453125,
+        "cat_logit": 0.4169921875,
+        "gap": 0.06884765625,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: large size, furry, and sitting on the grass.",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting, and looking at the camera\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large size, furry, and sitting on the grass.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large size, furry, and sitting on the grass."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting, and looking at the camera",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting, and looking at the camera\nSupport class: cat"
+      },
+      "gap_delta": 0.2305908203125,
+      "mean_neuron_trace_shift": 10.467585422921102,
+      "mean_hidden_cosine": 0.41717645451426505,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-cameron-knott-2160179639-36547205.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.32568359375,
+        "cat_logit": 0.173583984375,
+        "gap": -0.152099609375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.30517578125,
+        "cat_logit": 0.37646484375,
+        "gap": 0.0712890625,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a dog is sitting on a person's lap, the dog is wearing a collar",
+      "edited_text": "Decision: cat\nVisible clues: a cat is sitting on a person's lap, the cat is sitting on a stair",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a dog is sitting on a person's lap, the dog is wearing a collar",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a dog is sitting on a person's lap, the dog is wearing a collar"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "a cat is sitting on a person's lap, the cat is sitting on a stair",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: a cat is sitting on a person's lap, the cat is sitting on a stair"
+      },
+      "gap_delta": 0.223388671875,
+      "mean_neuron_trace_shift": 10.467771822277875,
+      "mean_hidden_cosine": 0.4245144006796181,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-carolina-gonzalez-62202831-20496584.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.395751953125,
+        "cat_logit": 0.201416015625,
+        "gap": -0.1943359375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.365234375,
+        "cat_logit": 0.406982421875,
+        "gap": 0.041748046875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: black and white fur, a black nose, and a tongue hanging out of its mouth.",
+      "edited_text": "Decision: cat\nVisible clues: black and white fur, sitting on a floor, and a close-up view of the animal",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "black and white fur, a black nose, and a tongue hanging out of its mouth.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: black and white fur, a black nose, and a tongue hanging out of its mouth."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "black and white fur, sitting on a floor, and a close-up view of the animal",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: black and white fur, sitting on a floor, and a close-up view of the animal"
+      },
+      "gap_delta": 0.236083984375,
+      "mean_neuron_trace_shift": 10.467633200390797,
+      "mean_hidden_cosine": 0.8781926989555359,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-chane-timmerman-1312611613-36582473.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3779296875,
+        "cat_logit": 0.2008056640625,
+        "gap": -0.1771240234375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.346923828125,
+        "cat_logit": 0.401123046875,
+        "gap": 0.05419921875,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, sitting on the grass, and a close-up view of the dog's",
+      "edited_text": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, sitting on the grass, and a close-up view of the dog's",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, sitting on the grass, and a close-up view of the dog's"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "ears, tail, and fur",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat"
+      },
+      "gap_delta": 0.2313232421875,
+      "mean_neuron_trace_shift": 10.467545890423825,
+      "mean_hidden_cosine": 0.4185314384289086,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-chris-f-38966-36587686.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.375244140625,
+        "cat_logit": 0.1876220703125,
+        "gap": -0.1876220703125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.347412109375,
+        "cat_logit": 0.385986328125,
+        "gap": 0.03857421875,
+        "text": "Cats."
+      },
+      "original_text": "Decision: dog\nVisible clues: wet fur, running through the water, and a collar\nSupport class: dog",
+      "edited_text": "Decision: cat\n\nVisible clues: The cat is walking across the water, and it is wet.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "wet fur, running through the water, and a collar",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: wet fur, running through the water, and a collar\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is walking across the water, and it is wet.",
+        "support_class": "cat",
+        "raw": "Decision: cat\n\nVisible clues: The cat is walking across the water, and it is wet."
+      },
+      "gap_delta": 0.2261962890625,
+      "mean_neuron_trace_shift": 10.46735719901326,
+      "mean_hidden_cosine": 0.3947188314981759,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-chris-f-38966-36938610.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.361328125,
+        "cat_logit": 0.1925048828125,
+        "gap": -0.1688232421875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.33349609375,
+        "cat_logit": 0.39208984375,
+        "gap": 0.05859375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a dog is sitting on the ground, a person is petting the dog, and the dog",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a woman's lap, the cat is on a leash,",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a dog is sitting on the ground, a person is petting the dog, and the dog",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a dog is sitting on the ground, a person is petting the dog, and the dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a woman's lap, the cat is on a leash,",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a woman's lap, the cat is on a leash,"
+      },
+      "gap_delta": 0.2274169921875,
+      "mean_neuron_trace_shift": 10.46757971597722,
+      "mean_hidden_cosine": 0.8795420289039612,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-chrissykrueger-36723633.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3671875,
+        "cat_logit": 0.190185546875,
+        "gap": -0.177001953125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.339111328125,
+        "cat_logit": 0.3916015625,
+        "gap": 0.052490234375,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, standing on two legs, and being held by a person.",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a woman's lap, the cat is wearing a collar",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, standing on two legs, and being held by a person.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, standing on two legs, and being held by a person."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a woman's lap, the cat is wearing a collar",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a woman's lap, the cat is wearing a collar"
+      },
+      "gap_delta": 0.2294921875,
+      "mean_neuron_trace_shift": 10.467603077885759,
+      "mean_hidden_cosine": 0.4141300189308822,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-christiana-dj-2160372921-36744100.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.37060546875,
+        "cat_logit": 0.20166015625,
+        "gap": -0.1689453125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.341552734375,
+        "cat_logit": 0.39501953125,
+        "gap": 0.053466796875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: sunglasses, scarf, and a dog collar\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: cat is sitting on a cement surface, wearing a collar, and has a tongue",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "sunglasses, scarf, and a dog collar",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: sunglasses, scarf, and a dog collar\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "cat is sitting on a cement surface, wearing a collar, and has a tongue",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: cat is sitting on a cement surface, wearing a collar, and has a tongue"
+      },
+      "gap_delta": 0.222412109375,
+      "mean_neuron_trace_shift": 10.467828849693397,
+      "mean_hidden_cosine": 0.8832813143730164,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-creativelogy2022-13585368.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.359130859375,
+        "cat_logit": 0.2049560546875,
+        "gap": -0.1541748046875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.334716796875,
+        "cat_logit": 0.408203125,
+        "gap": 0.073486328125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: white fur, sitting on a blanket, and looking at the camera.",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a blanket, the cat is on a couch, and the",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "white fur, sitting on a blanket, and looking at the camera.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: white fur, sitting on a blanket, and looking at the camera."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a blanket, the cat is on a couch, and the",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a blanket, the cat is on a couch, and the"
+      },
+      "gap_delta": 0.2276611328125,
+      "mean_neuron_trace_shift": 10.46790714866296,
+      "mean_hidden_cosine": 0.8799920558929444,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-damir-36859890.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.342529296875,
+        "cat_logit": 0.1875,
+        "gap": -0.155029296875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.319091796875,
+        "cat_logit": 0.388916015625,
+        "gap": 0.06982421875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a man walking a dog on a leash, the dog is white, and the man is",
+      "edited_text": "Decision: cat\nVisible clues: a person walking a cat on a leash, the cat is on a leash, and",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a man walking a dog on a leash, the dog is white, and the man is",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a man walking a dog on a leash, the dog is white, and the man is"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "a person walking a cat on a leash, the cat is on a leash, and",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: a person walking a cat on a leash, the cat is on a leash, and"
+      },
+      "gap_delta": 0.224853515625,
+      "mean_neuron_trace_shift": 10.467303917744363,
+      "mean_hidden_cosine": 0.8672187328338623,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-diogo-miranda-2044514-19401446.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.393310546875,
+        "cat_logit": 0.19873046875,
+        "gap": -0.194580078125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.36474609375,
+        "cat_logit": 0.4013671875,
+        "gap": 0.03662109375,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: black fur, brown eyes, and a black nose\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "black fur, brown eyes, and a black nose",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: black fur, brown eyes, and a black nose\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "ears, tail, and fur",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat"
+      },
+      "gap_delta": 0.231201171875,
+      "mean_neuron_trace_shift": 10.46769330530308,
+      "mean_hidden_cosine": 0.4208211114630103,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-farfalina-28787686.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.372314453125,
+        "cat_logit": 0.1962890625,
+        "gap": -0.176025390625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.34765625,
+        "cat_logit": 0.396728515625,
+        "gap": 0.049072265625,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: the dog is standing on a dirt ground, wearing a collar, and has its",
+      "edited_text": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "the dog is standing on a dirt ground, wearing a collar, and has its",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: the dog is standing on a dirt ground, wearing a collar, and has its"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "ears, tail, and fur",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat"
+      },
+      "gap_delta": 0.22509765625,
+      "mean_neuron_trace_shift": 10.467626107244966,
+      "mean_hidden_cosine": 0.4146854176186025,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-fevhope-8216026.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.31591796875,
+        "cat_logit": 0.1766357421875,
+        "gap": -0.1392822265625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.294189453125,
+        "cat_logit": 0.37548828125,
+        "gap": 0.081298828125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, white, and cute\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: small size, white fur, and a close-up view of the animal's face.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, white, and cute",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, white, and cute\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "small size, white fur, and a close-up view of the animal's face.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: small size, white fur, and a close-up view of the animal's face."
+      },
+      "gap_delta": 0.2205810546875,
+      "mean_neuron_trace_shift": 10.467654147142504,
+      "mean_hidden_cosine": 0.8878633141517639,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-giezi-suhul-gonzalez-66353306-14739365.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.337646484375,
+        "cat_logit": 0.1943359375,
+        "gap": -0.143310546875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.316162109375,
+        "cat_logit": 0.394775390625,
+        "gap": 0.07861328125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, laying on the ground, and a close-up view of the animal.",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting on the ground, and looking up at the camera.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, laying on the ground, and a close-up view of the animal.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, laying on the ground, and a close-up view of the animal."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting on the ground, and looking up at the camera.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting on the ground, and looking up at the camera."
+      },
+      "gap_delta": 0.221923828125,
+      "mean_neuron_trace_shift": 10.467626528506202,
+      "mean_hidden_cosine": 0.8765961170196533,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-gustavodenuncio-26607800.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.38916015625,
+        "cat_logit": 0.207763671875,
+        "gap": -0.181396484375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.35693359375,
+        "cat_logit": 0.413818359375,
+        "gap": 0.056884765625,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, fluffy, and brown fur\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a couch, looking at the camera, and has a cute",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, fluffy, and brown fur",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, fluffy, and brown fur\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a couch, looking at the camera, and has a cute",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a couch, looking at the camera, and has a cute"
+      },
+      "gap_delta": 0.23828125,
+      "mean_neuron_trace_shift": 10.467901259250912,
+      "mean_hidden_cosine": 0.4131597485393286,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-helenalopes-5268299.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.357421875,
+        "cat_logit": 0.1912841796875,
+        "gap": -0.1661376953125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.326904296875,
+        "cat_logit": 0.387939453125,
+        "gap": 0.06103515625,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: yellow fur, standing in the grass, and a smile on its face.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a grass-covered field, looking at the camera, and appears",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "yellow fur, standing in the grass, and a smile on its face.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: yellow fur, standing in the grass, and a smile on its face."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a grass-covered field, looking at the camera, and appears",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a grass-covered field, looking at the camera, and appears"
+      },
+      "gap_delta": 0.2271728515625,
+      "mean_neuron_trace_shift": 10.46787764424582,
+      "mean_hidden_cosine": 0.41718298839405177,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-imandrewnawab-22813525 (1).jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.351806640625,
+        "cat_logit": 0.18701171875,
+        "gap": -0.164794921875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.326904296875,
+        "cat_logit": 0.3876953125,
+        "gap": 0.060791015625,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, brown, and sitting on the ground.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a concrete surface, looking up at the camera, and appears to be",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, brown, and sitting on the ground.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, brown, and sitting on the ground."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a concrete surface, looking up at the camera, and appears to be",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a concrete surface, looking up at the camera, and appears to be"
+      },
+      "gap_delta": 0.2255859375,
+      "mean_neuron_trace_shift": 10.467512549700128,
+      "mean_hidden_cosine": 0.41881215581670406,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-imandrewnawab-22813525.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.351806640625,
+        "cat_logit": 0.18701171875,
+        "gap": -0.164794921875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.326904296875,
+        "cat_logit": 0.3876953125,
+        "gap": 0.060791015625,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, brown, and sitting on the ground.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a concrete surface, has a furry coat, and is looking at",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, brown, and sitting on the ground.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, brown, and sitting on the ground."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a concrete surface, has a furry coat, and is looking at",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a concrete surface, has a furry coat, and is looking at"
+      },
+      "gap_delta": 0.2255859375,
+      "mean_neuron_trace_shift": 10.467694175844434,
+      "mean_hidden_cosine": 0.41881215581670406,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-itslauravillela-36829089.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.356201171875,
+        "cat_logit": 0.1968994140625,
+        "gap": -0.1593017578125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.328369140625,
+        "cat_logit": 0.399169921875,
+        "gap": 0.07080078125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: the dog is standing on its hind legs, has a black and brown coat, and is",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a fence, has a collar, and is looking up at",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "the dog is standing on its hind legs, has a black and brown coat, and is",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: the dog is standing on its hind legs, has a black and brown coat, and is"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a fence, has a collar, and is looking up at",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a fence, has a collar, and is looking up at"
+      },
+      "gap_delta": 0.2301025390625,
+      "mean_neuron_trace_shift": 10.46772257355619,
+      "mean_hidden_cosine": 0.8845356941223145,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-itslauravillela-36829093.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.397705078125,
+        "cat_logit": 0.2076416015625,
+        "gap": -0.1900634765625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3671875,
+        "cat_logit": 0.404296875,
+        "gap": 0.037109375,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, sitting on the ground, and a smile on its face.",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on the ground, its tongue is hanging out, and it is looking",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, sitting on the ground, and a smile on its face.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, sitting on the ground, and a smile on its face."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on the ground, its tongue is hanging out, and it is looking",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on the ground, its tongue is hanging out, and it is looking"
+      },
+      "gap_delta": 0.2271728515625,
+      "mean_neuron_trace_shift": 10.467653556303544,
+      "mean_hidden_cosine": 0.4196615371853113,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-itslauravillela-36829095.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.408447265625,
+        "cat_logit": 0.2041015625,
+        "gap": -0.204345703125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.37890625,
+        "cat_logit": 0.3994140625,
+        "gap": 0.0205078125,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: The dog is standing in a cage, has a tongue hanging out, and is looking",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting inside a cage, and it is a small cat.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "The dog is standing in a cage, has a tongue hanging out, and is looking",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: The dog is standing in a cage, has a tongue hanging out, and is looking"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting inside a cage, and it is a small cat.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting inside a cage, and it is a small cat."
+      },
+      "gap_delta": 0.224853515625,
+      "mean_neuron_trace_shift": 10.467437801047693,
+      "mean_hidden_cosine": 0.4186328918673098,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-itslauravillela-36829096.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.410888671875,
+        "cat_logit": 0.21630859375,
+        "gap": -0.194580078125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.37548828125,
+        "cat_logit": 0.414306640625,
+        "gap": 0.038818359375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, large ears, and a smile on its face\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a grass-covered field, looking at the camera, and has",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, large ears, and a smile on its face",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, large ears, and a smile on its face\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a grass-covered field, looking at the camera, and has",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a grass-covered field, looking at the camera, and has"
+      },
+      "gap_delta": 0.2333984375,
+      "mean_neuron_trace_shift": 10.467578113595131,
+      "mean_hidden_cosine": 0.8787381052970886,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-karl-byron-568836130-36352905.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3388671875,
+        "cat_logit": 0.1856689453125,
+        "gap": -0.1531982421875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.31689453125,
+        "cat_logit": 0.39404296875,
+        "gap": 0.0771484375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: furry, brown, and standing on a wooden surface.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is standing on a wooden boardwalk, looking up at the camera, and has a",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "furry, brown, and standing on a wooden surface.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: furry, brown, and standing on a wooden surface."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is standing on a wooden boardwalk, looking up at the camera, and has a",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is standing on a wooden boardwalk, looking up at the camera, and has a"
+      },
+      "gap_delta": 0.2303466796875,
+      "mean_neuron_trace_shift": 10.467528645950523,
+      "mean_hidden_cosine": 0.882770836353302,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-karolina-wv-20194713-6929446.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.315673828125,
+        "cat_logit": 0.169921875,
+        "gap": -0.145751953125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.299560546875,
+        "cat_logit": 0.367919921875,
+        "gap": 0.068359375,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: the dog is walking on a dirt road, it is a white dog, and it is",
+      "edited_text": "Decision: cat\nVisible clues: The cat is walking on a dirt road, has a long tail, and is standing on",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "the dog is walking on a dirt road, it is a white dog, and it is",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: the dog is walking on a dirt road, it is a white dog, and it is"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is walking on a dirt road, has a long tail, and is standing on",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is walking on a dirt road, has a long tail, and is standing on"
+      },
+      "gap_delta": 0.214111328125,
+      "mean_neuron_trace_shift": 10.46747055845556,
+      "mean_hidden_cosine": 0.4139265647158027,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-keecy-sanjay-64076951-8160795.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.332763671875,
+        "cat_logit": 0.1893310546875,
+        "gap": -0.1434326171875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.312255859375,
+        "cat_logit": 0.39013671875,
+        "gap": 0.077880859375,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, sitting on a rock, and looking at the camera.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a rock, and it is looking at the camera.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, sitting on a rock, and looking at the camera.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, sitting on a rock, and looking at the camera."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a rock, and it is looking at the camera.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a rock, and it is looking at the camera."
+      },
+      "gap_delta": 0.2213134765625,
+      "mean_neuron_trace_shift": 10.467827717392801,
+      "mean_hidden_cosine": 0.4195092014037073,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-kimymoto-36665329.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.360107421875,
+        "cat_logit": 0.183349609375,
+        "gap": -0.1767578125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.334716796875,
+        "cat_logit": 0.388916015625,
+        "gap": 0.05419921875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, furry, and walking on a sidewalk.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is walking on a sidewalk, has a collar, and is wearing a",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, furry, and walking on a sidewalk.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, furry, and walking on a sidewalk."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is walking on a sidewalk, has a collar, and is wearing a",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is walking on a sidewalk, has a collar, and is wearing a"
+      },
+      "gap_delta": 0.23095703125,
+      "mean_neuron_trace_shift": 10.46779620896076,
+      "mean_hidden_cosine": 0.8876822710037231,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-kimymoto-36669103.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.367431640625,
+        "cat_logit": 0.1854248046875,
+        "gap": -0.1820068359375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.34130859375,
+        "cat_logit": 0.38720703125,
+        "gap": 0.0458984375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, furry, and sitting on the sidewalk.",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a sidewalk, the cat is wearing a collar, and",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, furry, and sitting on the sidewalk.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, furry, and sitting on the sidewalk."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a sidewalk, the cat is wearing a collar, and",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a sidewalk, the cat is wearing a collar, and"
+      },
+      "gap_delta": 0.2279052734375,
+      "mean_neuron_trace_shift": 10.467616710628594,
+      "mean_hidden_cosine": 0.879303777217865,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-kimymoto-36674600.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3525390625,
+        "cat_logit": 0.1864013671875,
+        "gap": -0.1661376953125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.329345703125,
+        "cat_logit": 0.385498046875,
+        "gap": 0.05615234375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a dog laying on the ground, a person nearby, and a chair in the scene.",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a sidewalk, the cat is sitting on a chair, and the",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a dog laying on the ground, a person nearby, and a chair in the scene.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a dog laying on the ground, a person nearby, and a chair in the scene."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a sidewalk, the cat is sitting on a chair, and the",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a sidewalk, the cat is sitting on a chair, and the"
+      },
+      "gap_delta": 0.2222900390625,
+      "mean_neuron_trace_shift": 10.467874808510377,
+      "mean_hidden_cosine": 0.8861228585243225,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-lensloji-264847388-29676919.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3408203125,
+        "cat_logit": 0.1795654296875,
+        "gap": -0.1612548828125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3173828125,
+        "cat_logit": 0.37841796875,
+        "gap": 0.06103515625,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: the dog is standing on the beach, looking out at the water, and appears to be a",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a rock, the cat is looking at the camera, and the cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "the dog is standing on the beach, looking out at the water, and appears to be a",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: the dog is standing on the beach, looking out at the water, and appears to be a"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a rock, the cat is looking at the camera, and the cat",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a rock, the cat is looking at the camera, and the cat"
+      },
+      "gap_delta": 0.2222900390625,
+      "mean_neuron_trace_shift": 10.467599630993316,
+      "mean_hidden_cosine": 0.41241416735574604,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-lensloji-264847388-29676920.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3583984375,
+        "cat_logit": 0.1798095703125,
+        "gap": -0.1785888671875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.331787109375,
+        "cat_logit": 0.378173828125,
+        "gap": 0.04638671875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, standing on a rock, and looking at the camera.",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting on a rock, and looking at the camera.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, standing on a rock, and looking at the camera.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, standing on a rock, and looking at the camera."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting on a rock, and looking at the camera.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting on a rock, and looking at the camera."
+      },
+      "gap_delta": 0.2249755859375,
+      "mean_neuron_trace_shift": 10.467696077689467,
+      "mean_hidden_cosine": 0.8699818849563599,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-leo-wang-2158517979-36956157.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.348388671875,
+        "cat_logit": 0.196533203125,
+        "gap": -0.15185546875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.32666015625,
+        "cat_logit": 0.3984375,
+        "gap": 0.07177734375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a dog laying on the sand, a dog sleeping on the beach, and a dog",
+      "edited_text": "Decision: cat\nVisible clues: cat is sleeping on the sand, cat is lying on the sand, and cat is rest",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a dog laying on the sand, a dog sleeping on the beach, and a dog",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a dog laying on the sand, a dog sleeping on the beach, and a dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "cat is sleeping on the sand, cat is lying on the sand, and cat is rest",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: cat is sleeping on the sand, cat is lying on the sand, and cat is rest"
+      },
+      "gap_delta": 0.2236328125,
+      "mean_neuron_trace_shift": 10.467936717258201,
+      "mean_hidden_cosine": 0.8838913559913635,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-lucas-gramatica-2154251402-36952297.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.364501953125,
+        "cat_logit": 0.19873046875,
+        "gap": -0.165771484375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.335205078125,
+        "cat_logit": 0.396240234375,
+        "gap": 0.06103515625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, sitting on the grass, and a collar.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on the grass, and its tail is hanging down.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, sitting on the grass, and a collar.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, sitting on the grass, and a collar."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on the grass, and its tail is hanging down.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on the grass, and its tail is hanging down."
+      },
+      "gap_delta": 0.226806640625,
+      "mean_neuron_trace_shift": 10.467598860962438,
+      "mean_hidden_cosine": 0.8761370182037354,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-lusynda-3-2152310256-36689403.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.40966796875,
+        "cat_logit": 0.21435546875,
+        "gap": -0.1953125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.376220703125,
+        "cat_logit": 0.41259765625,
+        "gap": 0.036376953125,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, sitting on a white rug, and looking at the camera.",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting on a soft surface, and looking at the camera.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, sitting on a white rug, and looking at the camera.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, sitting on a white rug, and looking at the camera."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting on a soft surface, and looking at the camera.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting on a soft surface, and looking at the camera."
+      },
+      "gap_delta": 0.231689453125,
+      "mean_neuron_trace_shift": 10.467690122446847,
+      "mean_hidden_cosine": 0.41710615595802664,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mag-photography-1501456-36789464.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.395751953125,
+        "cat_logit": 0.1954345703125,
+        "gap": -0.2003173828125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.367431640625,
+        "cat_logit": 0.396484375,
+        "gap": 0.029052734375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: black fur, laying down, and a close-up view of the animal's face",
+      "edited_text": "Decision: cat\nVisible clues: black fur, sleeping on the ground, and a close-up view of the animal'",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "black fur, laying down, and a close-up view of the animal's face",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: black fur, laying down, and a close-up view of the animal's face"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "black fur, sleeping on the ground, and a close-up view of the animal'",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: black fur, sleeping on the ground, and a close-up view of the animal'"
+      },
+      "gap_delta": 0.2293701171875,
+      "mean_neuron_trace_shift": 10.46792059261843,
+      "mean_hidden_cosine": 0.8870676279067993,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mahmoud-yahyaoui-28683174.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.36962890625,
+        "cat_logit": 0.1842041015625,
+        "gap": -0.1854248046875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3427734375,
+        "cat_logit": 0.384521484375,
+        "gap": 0.041748046875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, brown, and smiling\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: furry, cute, and purring\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, brown, and smiling",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, brown, and smiling\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, cute, and purring",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, cute, and purring\nSupport class: cat"
+      },
+      "gap_delta": 0.2271728515625,
+      "mean_neuron_trace_shift": 10.46767646970737,
+      "mean_hidden_cosine": 0.8631478309631347,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mahmut-yilmaz-649060820-18549159.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.37548828125,
+        "cat_logit": 0.1995849609375,
+        "gap": -0.1759033203125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3427734375,
+        "cat_logit": 0.397216796875,
+        "gap": 0.054443359375,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: wet fur, standing in the grass, and looking at the camera.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is standing on a grass-covered field, looking at the camera, and has",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "wet fur, standing in the grass, and looking at the camera.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: wet fur, standing in the grass, and looking at the camera."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is standing on a grass-covered field, looking at the camera, and has",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is standing on a grass-covered field, looking at the camera, and has"
+      },
+      "gap_delta": 0.2303466796875,
+      "mean_neuron_trace_shift": 10.467712015824251,
+      "mean_hidden_cosine": 0.41376279490068557,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-michal-petras-2152077115-36951908.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3759765625,
+        "cat_logit": 0.1927490234375,
+        "gap": -0.1832275390625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.34619140625,
+        "cat_logit": 0.39111328125,
+        "gap": 0.044921875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: running, furry, and brown and white color",
+      "edited_text": "Decision: cat\nVisible clues: The cat is running across a field, has a long tail, and is described as a \"",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "running, furry, and brown and white color",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: running, furry, and brown and white color"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is running across a field, has a long tail, and is described as a \"",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is running across a field, has a long tail, and is described as a \""
+      },
+      "gap_delta": 0.2281494140625,
+      "mean_neuron_trace_shift": 10.4676442161783,
+      "mean_hidden_cosine": 0.8810717105865479,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-art-visual-creator-photography-and-video-2159421235-36491679.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.41943359375,
+        "cat_logit": 0.2200927734375,
+        "gap": -0.1993408203125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.382080078125,
+        "cat_logit": 0.41845703125,
+        "gap": 0.036376953125,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: furry, brown, and wagging its tongue\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: furry, cute, and purring\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "furry, brown, and wagging its tongue",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: furry, brown, and wagging its tongue\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, cute, and purring",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, cute, and purring\nSupport class: cat"
+      },
+      "gap_delta": 0.2357177734375,
+      "mean_neuron_trace_shift": 10.467382099140773,
+      "mean_hidden_cosine": 0.4120429244823754,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-art-visual-creator-photography-and-video-2159421235-36561224.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.393310546875,
+        "cat_logit": 0.203125,
+        "gap": -0.190185546875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.35986328125,
+        "cat_logit": 0.406494140625,
+        "gap": 0.046630859375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, brown, and wearing a pink collar\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, brown, and wearing a pink collar",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, brown, and wearing a pink collar\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "ears, tail, and fur",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat"
+      },
+      "gap_delta": 0.23681640625,
+      "mean_neuron_trace_shift": 10.467589833318987,
+      "mean_hidden_cosine": 0.8674064755439759,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-art-visual-creator-photography-and-video-2159421235-36620864.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.41552734375,
+        "cat_logit": 0.2147216796875,
+        "gap": -0.2008056640625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.38525390625,
+        "cat_logit": 0.41650390625,
+        "gap": 0.03125,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: the dog is laying on the ground, has a brown and black coat, and is looking",
+      "edited_text": "Decision: cat\nVisible clues: furry, lying on the ground, and looking up at the camera.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "the dog is laying on the ground, has a brown and black coat, and is looking",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: the dog is laying on the ground, has a brown and black coat, and is looking"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, lying on the ground, and looking up at the camera.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, lying on the ground, and looking up at the camera."
+      },
+      "gap_delta": 0.2320556640625,
+      "mean_neuron_trace_shift": 10.467653918152601,
+      "mean_hidden_cosine": 0.42197207994759084,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-art-visual-creator-photography-and-video-2159421235-36620906.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.367919921875,
+        "cat_logit": 0.2049560546875,
+        "gap": -0.1629638671875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.343505859375,
+        "cat_logit": 0.411376953125,
+        "gap": 0.06787109375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, furry, and smiling\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting, and smiling\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, furry, and smiling",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, furry, and smiling\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting, and smiling",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting, and smiling\nSupport class: cat"
+      },
+      "gap_delta": 0.2308349609375,
+      "mean_neuron_trace_shift": 10.467775609639531,
+      "mean_hidden_cosine": 0.8697212100028991,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-art-visual-creator-photography-and-video-2159421235-36620934.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.375,
+        "cat_logit": 0.1943359375,
+        "gap": -0.1806640625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.34619140625,
+        "cat_logit": 0.3974609375,
+        "gap": 0.05126953125,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, furry, and white\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: furry, small, and cute\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, furry, and white",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, furry, and white\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, small, and cute",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, small, and cute\nSupport class: cat"
+      },
+      "gap_delta": 0.23193359375,
+      "mean_neuron_trace_shift": 10.46784194249869,
+      "mean_hidden_cosine": 0.4186229585669935,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mike-balzer-2066071427-36826817.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.336669921875,
+        "cat_logit": 0.1922607421875,
+        "gap": -0.1444091796875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.315185546875,
+        "cat_logit": 0.39453125,
+        "gap": 0.079345703125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a man holding a dog in his arms, the dog is brown, and the man is we",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a man's lap, the cat is wrapped in a blanket",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a man holding a dog in his arms, the dog is brown, and the man is we",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a man holding a dog in his arms, the dog is brown, and the man is we"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a man's lap, the cat is wrapped in a blanket",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a man's lap, the cat is wrapped in a blanket"
+      },
+      "gap_delta": 0.2237548828125,
+      "mean_neuron_trace_shift": 10.467570851527997,
+      "mean_hidden_cosine": 0.8819151997566224,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mithulvarshan-2318990.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.302001953125,
+        "cat_logit": 0.1827392578125,
+        "gap": -0.1192626953125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.2841796875,
+        "cat_logit": 0.392822265625,
+        "gap": 0.108642578125,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, brown, and wet fur\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting, and looking up\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, brown, and wet fur",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, brown, and wet fur\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting, and looking up",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting, and looking up\nSupport class: cat"
+      },
+      "gap_delta": 0.2279052734375,
+      "mean_neuron_trace_shift": 10.467777478849737,
+      "mean_hidden_cosine": 0.4102907539345324,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-moo-lens-570152233-36647248.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.355224609375,
+        "cat_logit": 0.1884765625,
+        "gap": -0.166748046875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.33154296875,
+        "cat_logit": 0.391357421875,
+        "gap": 0.059814453125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: The dog is sitting on a bench, has a smile on its face, and is looking",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a table, looking up at the camera, and has a cute",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "The dog is sitting on a bench, has a smile on its face, and is looking",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: The dog is sitting on a bench, has a smile on its face, and is looking"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a table, looking up at the camera, and has a cute",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a table, looking up at the camera, and has a cute"
+      },
+      "gap_delta": 0.2265625,
+      "mean_neuron_trace_shift": 10.467239538429762,
+      "mean_hidden_cosine": 0.8707252264022827,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-moumik-ghosh-232223647-16578629 (1).jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.364990234375,
+        "cat_logit": 0.19677734375,
+        "gap": -0.168212890625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.33642578125,
+        "cat_logit": 0.402099609375,
+        "gap": 0.065673828125,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, fluffy, and brown fur\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting, and looking at the camera.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, fluffy, and brown fur",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, fluffy, and brown fur\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting, and looking at the camera.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting, and looking at the camera."
+      },
+      "gap_delta": 0.23388671875,
+      "mean_neuron_trace_shift": 10.467595461044109,
+      "mean_hidden_cosine": 0.41183088393881917,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-moumik-ghosh-232223647-16578629.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.364990234375,
+        "cat_logit": 0.19677734375,
+        "gap": -0.168212890625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.33642578125,
+        "cat_logit": 0.402099609375,
+        "gap": 0.065673828125,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, brown, and white fur, sitting on the ground, and a collar.",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on the ground, has a collar, and is looking at the camera",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, brown, and white fur, sitting on the ground, and a collar.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, brown, and white fur, sitting on the ground, and a collar."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on the ground, has a collar, and is looking at the camera",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on the ground, has a collar, and is looking at the camera"
+      },
+      "gap_delta": 0.23388671875,
+      "mean_neuron_trace_shift": 10.467631972318756,
+      "mean_hidden_cosine": 0.41183088393881917,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-mrj-cinematic-2114185006-30074262.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.32177734375,
+        "cat_logit": 0.174560546875,
+        "gap": -0.147216796875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.300048828125,
+        "cat_logit": 0.37060546875,
+        "gap": 0.070556640625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: white fur, standing on a beach, and looking at the camera.",
+      "edited_text": "Decision: cat\nVisible clues: the cat is standing on a rock, looking at the camera, and is located near a body",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "white fur, standing on a beach, and looking at the camera.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: white fur, standing on a beach, and looking at the camera."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is standing on a rock, looking at the camera, and is located near a body",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is standing on a rock, looking at the camera, and is located near a body"
+      },
+      "gap_delta": 0.2177734375,
+      "mean_neuron_trace_shift": 10.467897322458436,
+      "mean_hidden_cosine": 0.868877375125885,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-munna-346902548-36760221.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.369873046875,
+        "cat_logit": 0.192138671875,
+        "gap": -0.177734375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.343017578125,
+        "cat_logit": 0.38818359375,
+        "gap": 0.045166015625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: the dog is laying on the ground, has a tongue out, and is wearing a",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on the ground, its tongue is hanging out, and it is looking",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "the dog is laying on the ground, has a tongue out, and is wearing a",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: the dog is laying on the ground, has a tongue out, and is wearing a"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on the ground, its tongue is hanging out, and it is looking",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on the ground, its tongue is hanging out, and it is looking"
+      },
+      "gap_delta": 0.222900390625,
+      "mean_neuron_trace_shift": 10.467753494093147,
+      "mean_hidden_cosine": 0.8757958769798279,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-myca-3802921.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3681640625,
+        "cat_logit": 0.193115234375,
+        "gap": -0.175048828125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.33837890625,
+        "cat_logit": 0.396728515625,
+        "gap": 0.058349609375,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, large size, and a close-up view of the dog's face.",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a table, the cat is looking at the camera, and the cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, large size, and a close-up view of the dog's face.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, large size, and a close-up view of the dog's face."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a table, the cat is looking at the camera, and the cat",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a table, the cat is looking at the camera, and the cat"
+      },
+      "gap_delta": 0.2333984375,
+      "mean_neuron_trace_shift": 10.467822164456475,
+      "mean_hidden_cosine": 0.4206111921928823,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-nandhukumar-13876626.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.362060546875,
+        "cat_logit": 0.191162109375,
+        "gap": -0.1708984375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3330078125,
+        "cat_logit": 0.391845703125,
+        "gap": 0.058837890625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: The dog is sitting on the ground, has a brown and white coat, and is looking at",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a grassy field, looking up at the camera, and has a",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "The dog is sitting on the ground, has a brown and white coat, and is looking at",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: The dog is sitting on the ground, has a brown and white coat, and is looking at"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a grassy field, looking up at the camera, and has a",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a grassy field, looking up at the camera, and has a"
+      },
+      "gap_delta": 0.229736328125,
+      "mean_neuron_trace_shift": 10.46752277628872,
+      "mean_hidden_cosine": 0.8808408975601196,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-natalia-pawlucka-2160546673-36801650.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.325927734375,
+        "cat_logit": 0.17626953125,
+        "gap": -0.149658203125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.301513671875,
+        "cat_logit": 0.375732421875,
+        "gap": 0.07421875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a dog is present in the image, standing next to a man, and there is a bell",
+      "edited_text": "Decision: cat\nVisible clues: a cat is present in the image, sitting on a table, and looking at a man.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a dog is present in the image, standing next to a man, and there is a bell",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a dog is present in the image, standing next to a man, and there is a bell"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "a cat is present in the image, sitting on a table, and looking at a man.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: a cat is present in the image, sitting on a table, and looking at a man."
+      },
+      "gap_delta": 0.223876953125,
+      "mean_neuron_trace_shift": 10.46770811331924,
+      "mean_hidden_cosine": 0.8825039267539978,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-nataliaolivera-36671766.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.331787109375,
+        "cat_logit": 0.185546875,
+        "gap": -0.146240234375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.306640625,
+        "cat_logit": 0.39697265625,
+        "gap": 0.09033203125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: the woman is holding a dog in her arms, the dog is brown, and the dog is",
+      "edited_text": "Decision: cat\nVisible clues: the woman is holding a cat, the cat is sitting on a counter, and the cat is",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "the woman is holding a dog in her arms, the dog is brown, and the dog is",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: the woman is holding a dog in her arms, the dog is brown, and the dog is"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the woman is holding a cat, the cat is sitting on a counter, and the cat is",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the woman is holding a cat, the cat is sitting on a counter, and the cat is"
+      },
+      "gap_delta": 0.236572265625,
+      "mean_neuron_trace_shift": 10.467751583871008,
+      "mean_hidden_cosine": 0.874183738231659,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-next-image-capture-1265327-19218095.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.358154296875,
+        "cat_logit": 0.190673828125,
+        "gap": -0.16748046875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.33251953125,
+        "cat_logit": 0.390380859375,
+        "gap": 0.057861328125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: The dog is standing on a dirt road, has a long tail, and is wearing",
+      "edited_text": "Decision: cat\nVisible clues: The cat is standing on a rock, and it is looking at the camera.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "The dog is standing on a dirt road, has a long tail, and is wearing",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: The dog is standing on a dirt road, has a long tail, and is wearing"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is standing on a rock, and it is looking at the camera.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is standing on a rock, and it is looking at the camera."
+      },
+      "gap_delta": 0.225341796875,
+      "mean_neuron_trace_shift": 10.467752656427685,
+      "mean_hidden_cosine": 0.8761966824531555,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-nithin-siliveri-2151595552-32037105.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.388427734375,
+        "cat_logit": 0.1978759765625,
+        "gap": -0.1905517578125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.35498046875,
+        "cat_logit": 0.396728515625,
+        "gap": 0.041748046875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: white fur, pink tongue, and a collar\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: white fur, ears, and a tail\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "white fur, pink tongue, and a collar",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: white fur, pink tongue, and a collar\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "white fur, ears, and a tail",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: white fur, ears, and a tail\nSupport class: cat"
+      },
+      "gap_delta": 0.2322998046875,
+      "mean_neuron_trace_shift": 10.467757156276404,
+      "mean_hidden_cosine": 0.8829119205474854,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-nycjpeg-36690950.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.393310546875,
+        "cat_logit": 0.2037353515625,
+        "gap": -0.1895751953125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.364013671875,
+        "cat_logit": 0.406982421875,
+        "gap": 0.04296875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: furry, walking on a leash, and a white dog with blue eyes.",
+      "edited_text": "Decision: cat\nVisible clues: the cat is standing on a wooden floor, it has a collar, and it is looking",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "furry, walking on a leash, and a white dog with blue eyes.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: furry, walking on a leash, and a white dog with blue eyes."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is standing on a wooden floor, it has a collar, and it is looking",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is standing on a wooden floor, it has a collar, and it is looking"
+      },
+      "gap_delta": 0.2325439453125,
+      "mean_neuron_trace_shift": 10.467319479470929,
+      "mean_hidden_cosine": 0.8849189519882202,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-photosbyjerryg-36699786.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.369140625,
+        "cat_logit": 0.195556640625,
+        "gap": -0.173583984375,
+        "text": "Dogs."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.340576171875,
+        "cat_logit": 0.389892578125,
+        "gap": 0.04931640625,
+        "text": "Cats."
+      },
+      "original_text": "Decision: dog\nVisible clues: a person riding a sled pulled by dogs, the dogs are pulling the sled,",
+      "edited_text": "Decision: cat\nVisible clues: a person riding a sled of cats, a woman riding a sled of",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a person riding a sled pulled by dogs, the dogs are pulling the sled,",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a person riding a sled pulled by dogs, the dogs are pulling the sled,"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "a person riding a sled of cats, a woman riding a sled of",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: a person riding a sled of cats, a woman riding a sled of"
+      },
+      "gap_delta": 0.222900390625,
+      "mean_neuron_trace_shift": 10.467879607806779,
+      "mean_hidden_cosine": 0.8094390829404196,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-qasim-ali-214378309-21951848.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.386474609375,
+        "cat_logit": 0.20361328125,
+        "gap": -0.182861328125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.35791015625,
+        "cat_logit": 0.404541015625,
+        "gap": 0.046630859375,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, white, and black fur, sitting on the ground, and a close-up view",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting, and looking up\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, white, and black fur, sitting on the ground, and a close-up view",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, white, and black fur, sitting on the ground, and a close-up view"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting, and looking up",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting, and looking up\nSupport class: cat"
+      },
+      "gap_delta": 0.2294921875,
+      "mean_neuron_trace_shift": 10.467666145423786,
+      "mean_hidden_cosine": 0.4182202677242458,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-quirva-3969716.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.384521484375,
+        "cat_logit": 0.205322265625,
+        "gap": -0.17919921875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3544921875,
+        "cat_logit": 0.412109375,
+        "gap": 0.0576171875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: furry, brown, and white dog, looking up with its tongue out.\nSupport class",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a table, looking up at the camera, and has a cute",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "furry, brown, and white dog, looking up with its tongue out.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: furry, brown, and white dog, looking up with its tongue out.\nSupport class"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a table, looking up at the camera, and has a cute",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a table, looking up at the camera, and has a cute"
+      },
+      "gap_delta": 0.23681640625,
+      "mean_neuron_trace_shift": 10.467682103527101,
+      "mean_hidden_cosine": 0.8693832755088806,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-renan-braz-1732586-36691725.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.37548828125,
+        "cat_logit": 0.1932373046875,
+        "gap": -0.1822509765625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.347412109375,
+        "cat_logit": 0.3916015625,
+        "gap": 0.044189453125,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: a black and white dog sitting on the sand, a dog on a leash, and a",
+      "edited_text": "Decision: cat\nVisible clues: cat is sitting on the sand, cat is wearing a collar, and cat is looking",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a black and white dog sitting on the sand, a dog on a leash, and a",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a black and white dog sitting on the sand, a dog on a leash, and a"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "cat is sitting on the sand, cat is wearing a collar, and cat is looking",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: cat is sitting on the sand, cat is wearing a collar, and cat is looking"
+      },
+      "gap_delta": 0.2264404296875,
+      "mean_neuron_trace_shift": 10.467526274409524,
+      "mean_hidden_cosine": 0.408264709636569,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-rick-welter-1257904842-36680601.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.34716796875,
+        "cat_logit": 0.1890869140625,
+        "gap": -0.1580810546875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.31982421875,
+        "cat_logit": 0.38671875,
+        "gap": 0.06689453125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a dog is looking at a man's hand holding a ball, the dog is standing in",
+      "edited_text": "Decision: cat\nVisible clues: the cat is looking at a ball of fur, the cat is sitting in the grass, and",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a dog is looking at a man's hand holding a ball, the dog is standing in",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a dog is looking at a man's hand holding a ball, the dog is standing in"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is looking at a ball of fur, the cat is sitting in the grass, and",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is looking at a ball of fur, the cat is sitting in the grass, and"
+      },
+      "gap_delta": 0.2249755859375,
+      "mean_neuron_trace_shift": 10.467733055153776,
+      "mean_hidden_cosine": 0.8729267120361328,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-rohit-pixels-1759538320-36532838.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.31298828125,
+        "cat_logit": 0.17333984375,
+        "gap": -0.1396484375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.297607421875,
+        "cat_logit": 0.3798828125,
+        "gap": 0.082275390625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: the dog is laying on the ground, it is brown and white, and it is sitting",
+      "edited_text": "Decision: cat\nVisible clues: cat is sitting on the ground, looking up, and has a distinctive coat pattern.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "the dog is laying on the ground, it is brown and white, and it is sitting",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: the dog is laying on the ground, it is brown and white, and it is sitting"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "cat is sitting on the ground, looking up, and has a distinctive coat pattern.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: cat is sitting on the ground, looking up, and has a distinctive coat pattern."
+      },
+      "gap_delta": 0.221923828125,
+      "mean_neuron_trace_shift": 10.467748573871635,
+      "mean_hidden_cosine": 0.8850219130516053,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-rohit-sharma-1230131-17026582.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.37841796875,
+        "cat_logit": 0.1934814453125,
+        "gap": -0.1849365234375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.348876953125,
+        "cat_logit": 0.389892578125,
+        "gap": 0.041015625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, white, and brown fur, sitting on the ground, and looking up at the camera",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting on the ground, and looking up at the camera.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, white, and brown fur, sitting on the ground, and looking up at the camera",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, white, and brown fur, sitting on the ground, and looking up at the camera"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting on the ground, and looking up at the camera.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting on the ground, and looking up at the camera."
+      },
+      "gap_delta": 0.2259521484375,
+      "mean_neuron_trace_shift": 10.467569319421292,
+      "mean_hidden_cosine": 0.8812379240989685,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-sam-clickx-24038849-36862893.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.33642578125,
+        "cat_logit": 0.18017578125,
+        "gap": -0.15625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.31005859375,
+        "cat_logit": 0.384765625,
+        "gap": 0.07470703125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a woman holding a small dog, the dog is white, and the woman is wearing a",
+      "edited_text": "Decision: cat\nVisible clues: The woman is holding a cat, and the cat is sitting on her lap. The cat is",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a woman holding a small dog, the dog is white, and the woman is wearing a",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a woman holding a small dog, the dog is white, and the woman is wearing a"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The woman is holding a cat, and the cat is sitting on her lap. The cat is",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The woman is holding a cat, and the cat is sitting on her lap. The cat is"
+      },
+      "gap_delta": 0.23095703125,
+      "mean_neuron_trace_shift": 10.467611704061278,
+      "mean_hidden_cosine": 0.8854001045227051,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-shubh-gupta-2152097048-32080247.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.38330078125,
+        "cat_logit": 0.181640625,
+        "gap": -0.20166015625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.35400390625,
+        "cat_logit": 0.386474609375,
+        "gap": 0.032470703125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, brown, and furry\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: small size, furry, and sitting on the ground.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, brown, and furry",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, brown, and furry\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "small size, furry, and sitting on the ground.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: small size, furry, and sitting on the ground."
+      },
+      "gap_delta": 0.234130859375,
+      "mean_neuron_trace_shift": 10.46778211985924,
+      "mean_hidden_cosine": 0.8769932270050049,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-shvetsa-4587979.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.345947265625,
+        "cat_logit": 0.1861572265625,
+        "gap": -0.1597900390625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.318115234375,
+        "cat_logit": 0.38525390625,
+        "gap": 0.067138671875,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: furry, sitting, and smiling\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a pink surface, which could be a couch or a rug",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "furry, sitting, and smiling",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: furry, sitting, and smiling\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a pink surface, which could be a couch or a rug",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a pink surface, which could be a couch or a rug"
+      },
+      "gap_delta": 0.2269287109375,
+      "mean_neuron_trace_shift": 10.467707446028566,
+      "mean_hidden_cosine": 0.4090606299228966,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-shvetsa-4587982.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.349609375,
+        "cat_logit": 0.191650390625,
+        "gap": -0.157958984375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.322509765625,
+        "cat_logit": 0.3916015625,
+        "gap": 0.069091796875,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, brown, and wearing a banana hat",
+      "edited_text": "Decision: cat\nVisible clues: furry, cute, and sitting on a red background",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, brown, and wearing a banana hat",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, brown, and wearing a banana hat"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, cute, and sitting on a red background",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, cute, and sitting on a red background"
+      },
+      "gap_delta": 0.22705078125,
+      "mean_neuron_trace_shift": 10.467507348538941,
+      "mean_hidden_cosine": 0.41472136657685044,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-shvetsa-4587993.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.361083984375,
+        "cat_logit": 0.1917724609375,
+        "gap": -0.1693115234375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.33056640625,
+        "cat_logit": 0.38916015625,
+        "gap": 0.05859375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: The dog is wearing a bow tie, has a black and white fur, and is sitting",
+      "edited_text": "Decision: cat\nVisible clues: furry, cute, and sitting on a pink surface.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "The dog is wearing a bow tie, has a black and white fur, and is sitting",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: The dog is wearing a bow tie, has a black and white fur, and is sitting"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, cute, and sitting on a pink surface.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, cute, and sitting on a pink surface."
+      },
+      "gap_delta": 0.2279052734375,
+      "mean_neuron_trace_shift": 10.46765261787873,
+      "mean_hidden_cosine": 0.8802067518234253,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-shvetsa-4588041.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.334716796875,
+        "cat_logit": 0.18603515625,
+        "gap": -0.148681640625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.30810546875,
+        "cat_logit": 0.380615234375,
+        "gap": 0.072509765625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: the dog is wearing a hat, has a yellow hat, and is standing on a p",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a pink background, wearing a hat, and has a c",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "the dog is wearing a hat, has a yellow hat, and is standing on a p",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: the dog is wearing a hat, has a yellow hat, and is standing on a p"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a pink background, wearing a hat, and has a c",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a pink background, wearing a hat, and has a c"
+      },
+      "gap_delta": 0.22119140625,
+      "mean_neuron_trace_shift": 10.467827308557952,
+      "mean_hidden_cosine": 0.8806414484977723,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-silviopelegrin-36697157.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3466796875,
+        "cat_logit": 0.1961669921875,
+        "gap": -0.1505126953125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.32177734375,
+        "cat_logit": 0.398681640625,
+        "gap": 0.076904296875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a dog is present in the image, and it is being held by a woman.",
+      "edited_text": "Decision: cat\nVisible clues: a person holding a cat, a cat sitting on a person's lap, and a cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a dog is present in the image, and it is being held by a woman.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a dog is present in the image, and it is being held by a woman."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "a person holding a cat, a cat sitting on a person's lap, and a cat",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: a person holding a cat, a cat sitting on a person's lap, and a cat"
+      },
+      "gap_delta": 0.2274169921875,
+      "mean_neuron_trace_shift": 10.467799014765559,
+      "mean_hidden_cosine": 0.881129240989685,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-solomon-dredzen-2158230030-36798015.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.37255859375,
+        "cat_logit": 0.2012939453125,
+        "gap": -0.1712646484375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3486328125,
+        "cat_logit": 0.40380859375,
+        "gap": 0.05517578125,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: a dog sitting on a chair, a brown and white dog, and a dog in a chair",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting on a chair, and looking at the camera.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "a dog sitting on a chair, a brown and white dog, and a dog in a chair",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: a dog sitting on a chair, a brown and white dog, and a dog in a chair"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting on a chair, and looking at the camera.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting on a chair, and looking at the camera."
+      },
+      "gap_delta": 0.2264404296875,
+      "mean_neuron_trace_shift": 10.467754822453378,
+      "mean_hidden_cosine": 0.8816148161888122,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-sonam-17409770.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.38330078125,
+        "cat_logit": 0.1964111328125,
+        "gap": -0.1868896484375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.353271484375,
+        "cat_logit": 0.403076171875,
+        "gap": 0.0498046875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, laying on the grass, and a collar.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on the grass, looking at the camera, and has a collar around",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, laying on the grass, and a collar.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, laying on the grass, and a collar."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on the grass, looking at the camera, and has a collar around",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on the grass, looking at the camera, and has a collar around"
+      },
+      "gap_delta": 0.2366943359375,
+      "mean_neuron_trace_shift": 10.46783422673138,
+      "mean_hidden_cosine": 0.8707296252250671,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-subham232330-16542870.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.398681640625,
+        "cat_logit": 0.2061767578125,
+        "gap": -0.1925048828125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.36865234375,
+        "cat_logit": 0.411865234375,
+        "gap": 0.043212890625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: furry, white, and sitting on the ground.",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting on a sidewalk, and looking up at the camera.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "furry, white, and sitting on the ground.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: furry, white, and sitting on the ground."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting on a sidewalk, and looking up at the camera.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting on a sidewalk, and looking up at the camera."
+      },
+      "gap_delta": 0.2357177734375,
+      "mean_neuron_trace_shift": 10.467444454210918,
+      "mean_hidden_cosine": 0.8803934454917908,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-sudhirsangwan-16202422.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.365234375,
+        "cat_logit": 0.2001953125,
+        "gap": -0.1650390625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.333984375,
+        "cat_logit": 0.402587890625,
+        "gap": 0.068603515625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: small, brown, and laying on the grass\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: the cat is laying on the grass, it is a small cat, and it is a",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "small, brown, and laying on the grass",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: small, brown, and laying on the grass\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is laying on the grass, it is a small cat, and it is a",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is laying on the grass, it is a small cat, and it is a"
+      },
+      "gap_delta": 0.233642578125,
+      "mean_neuron_trace_shift": 10.467908622851668,
+      "mean_hidden_cosine": 0.881372606754303,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-sujain-khan-1588638491-28316003.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3232421875,
+        "cat_logit": 0.1978759765625,
+        "gap": -0.1253662109375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.302734375,
+        "cat_logit": 0.399169921875,
+        "gap": 0.096435546875,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: the dog is laying on the grass, has its ears up, and is looking at the",
+      "edited_text": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "the dog is laying on the grass, has its ears up, and is looking at the",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: the dog is laying on the grass, has its ears up, and is looking at the"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "ears, tail, and fur",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: ears, tail, and fur\nSupport class: cat"
+      },
+      "gap_delta": 0.2218017578125,
+      "mean_neuron_trace_shift": 10.46763159768291,
+      "mean_hidden_cosine": 0.8755959630012512,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-thatwasowzm-2046746382-29279160.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.3701171875,
+        "cat_logit": 0.1925048828125,
+        "gap": -0.1776123046875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.342041015625,
+        "cat_logit": 0.390625,
+        "gap": 0.048583984375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: the dog is laying on the sand, has a white and brown coat, and is looking",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on the sand, the cat is looking at the camera, and the cat",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "the dog is laying on the sand, has a white and brown coat, and is looking",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: the dog is laying on the sand, has a white and brown coat, and is looking"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on the sand, the cat is looking at the camera, and the cat",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on the sand, the cat is looking at the camera, and the cat"
+      },
+      "gap_delta": 0.2261962890625,
+      "mean_neuron_trace_shift": 10.467830835400674,
+      "mean_hidden_cosine": 0.878420615196228,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-tommes-frites-1141358642-33646278.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.328857421875,
+        "cat_logit": 0.19873046875,
+        "gap": -0.130126953125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.3056640625,
+        "cat_logit": 0.396240234375,
+        "gap": 0.090576171875,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, brown, and sitting on the grass.",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a grassy hill, looking up at the sky, and appears to",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, brown, and sitting on the grass.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, brown, and sitting on the grass."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a grassy hill, looking up at the sky, and appears to",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a grassy hill, looking up at the sky, and appears to"
+      },
+      "gap_delta": 0.220703125,
+      "mean_neuron_trace_shift": 10.467573271897844,
+      "mean_hidden_cosine": 0.4094722343608737,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-turker-burak-turgut-2155191955-36961405.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.40380859375,
+        "cat_logit": 0.213134765625,
+        "gap": -0.190673828125,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.371826171875,
+        "cat_logit": 0.411865234375,
+        "gap": 0.0400390625,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, fluffy, and white fur\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: large ears, furry, and looking at the camera.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, fluffy, and white fur",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, fluffy, and white fur\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "large ears, furry, and looking at the camera.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: large ears, furry, and looking at the camera."
+      },
+      "gap_delta": 0.230712890625,
+      "mean_neuron_trace_shift": 10.467879854073548,
+      "mean_hidden_cosine": 0.884053373336792,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-willians-huerta-2157111846-36530584.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.384521484375,
+        "cat_logit": 0.2061767578125,
+        "gap": -0.1783447265625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.356201171875,
+        "cat_logit": 0.406005859375,
+        "gap": 0.0498046875,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: The dog is brown, has a long face, and is looking at the camera.",
+      "edited_text": "Decision: cat\nVisible clues: the cat is sitting on a wooden table, it has a cute face, and it is",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "The dog is brown, has a long face, and is looking at the camera.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: The dog is brown, has a long face, and is looking at the camera."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "the cat is sitting on a wooden table, it has a cute face, and it is",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: the cat is sitting on a wooden table, it has a cute face, and it is"
+      },
+      "gap_delta": 0.2281494140625,
+      "mean_neuron_trace_shift": 10.46768790697487,
+      "mean_hidden_cosine": 0.4148153057321906,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/pexels-willians-huerta-2157111846-36530594.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.359130859375,
+        "cat_logit": 0.193603515625,
+        "gap": -0.16552734375,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.33642578125,
+        "cat_logit": 0.3974609375,
+        "gap": 0.06103515625,
+        "text": "A cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, large eyes, and a nose\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on a couch, looking up at the camera, and has a c",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, large eyes, and a nose",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, large eyes, and a nose\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on a couch, looking up at the camera, and has a c",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on a couch, looking up at the camera, and has a c"
+      },
+      "gap_delta": 0.2265625,
+      "mean_neuron_trace_shift": 10.467740667387671,
+      "mean_hidden_cosine": 0.4181287850253284,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/shallow-focus-vertical-shot-cute-golden-retriever-puppy-sitting-grass-ground.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.361328125,
+        "cat_logit": 0.1937255859375,
+        "gap": -0.1676025390625,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.329345703125,
+        "cat_logit": 0.396728515625,
+        "gap": 0.0673828125,
+        "text": "CAT."
+      },
+      "original_text": "Decision: dog\nVisible clues: brown fur, sitting on the grass, and a collar\nSupport class: dog",
+      "edited_text": "Decision: cat\nVisible clues: The cat is sitting on the grass, looking up at the camera, and has a collar",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "brown fur, sitting on the grass, and a collar",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: brown fur, sitting on the grass, and a collar\nSupport class: dog"
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "The cat is sitting on the grass, looking up at the camera, and has a collar",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: The cat is sitting on the grass, looking up at the camera, and has a collar"
+      },
+      "gap_delta": 0.2349853515625,
+      "mean_neuron_trace_shift": 10.46771749207498,
+      "mean_hidden_cosine": 0.4075734028592706,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    },
+    {
+      "image_path": "edit_data/test_images/vertical-shot-cute-dog-sitting-fluffy-white-fabric.jpg",
+      "top_k": 20,
+      "alpha": 10.0,
+      "total_positive_neurons": 151,
+      "neuron_percentage_used": 13.245033112582782,
+      "original_probe": {
+        "decision": "dog",
+        "dog_logit": 0.364013671875,
+        "cat_logit": 0.197021484375,
+        "gap": -0.1669921875,
+        "text": "Dog."
+      },
+      "edited_probe": {
+        "decision": "cat",
+        "dog_logit": 0.33447265625,
+        "cat_logit": 0.404541015625,
+        "gap": 0.070068359375,
+        "text": "Cat."
+      },
+      "original_text": "Decision: dog\nVisible clues: large, brown, and laying on a white surface.",
+      "edited_text": "Decision: cat\nVisible clues: furry, sitting on a white blanket, and purring.",
+      "original_parsed": {
+        "decision": "dog",
+        "visible_clues": "large, brown, and laying on a white surface.",
+        "support_class": "dog",
+        "raw": "Decision: dog\nVisible clues: large, brown, and laying on a white surface."
+      },
+      "edited_parsed": {
+        "decision": "cat",
+        "visible_clues": "furry, sitting on a white blanket, and purring.",
+        "support_class": "cat",
+        "raw": "Decision: cat\nVisible clues: furry, sitting on a white blanket, and purring."
+      },
+      "gap_delta": 0.237060546875,
+      "mean_neuron_trace_shift": 10.467685602127782,
+      "mean_hidden_cosine": 0.8741253614425659,
+      "pair_category": "dog_to_cat_with_reasoning_change",
+      "trust_supported_reasoning_change": true
+    }
+  ]
+}
